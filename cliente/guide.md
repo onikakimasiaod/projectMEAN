@@ -23,5 +23,16 @@ Generate services inside the folder services:
 ````
 ng generate service folderName/nameService
 ````
-Then create the models you need using the interface.
-
+Create the models you need using the interface and then do the routing in app-routing.module.ts:
+````
+const routes: Routes = [ 
+  { path: '', component: ListarProductosComponent },
+  { path: 'crear-producto', component: CrearProductoComponent },
+  { path: 'editar-producto/:id', component: CrearProductoComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
+];
+````
+If you want to use this routes in a button, use: 
+````
+routerLink="/"
+````
