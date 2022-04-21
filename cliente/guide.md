@@ -36,3 +36,5 @@ If you want to use this routes in a button, use:
 ````
 routerLink="/"
 ````
+Next, insert code in the html files of the components and add Bootstrap in it.
+
